@@ -7,9 +7,37 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
+  get '/photography' do
+    @status = "inactive"
+    erb :photography
+  end
+  
+  post '/photography' do
+    #work on getting photos to show up on the same page-->no new page
+    userType = params[:type]
+    @photo = photography(userType)
+    @status = "active"
+    erb :photography
+  end
+  
+
+  get '/music' do
+    @status = "inactive"
+    erb :music
+    
+  end
+  
+  post '/music' do
+    userGenre = params[:genre].to_sym
+    p userGenre
+    @result = music_playlists(userGenre)
+    @status = "active"
+    erb :music
+  end
 
 
-
-
+  get '/visualart' do
+    erb :visualart
+  end  
 
 end

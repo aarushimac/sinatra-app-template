@@ -1,0 +1,16 @@
+
+#page2 {
+    color: rgb(171,17,93);
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-size: 50px;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
