@@ -29,8 +29,8 @@ class MyApp < Sinatra::Base
   
   post '/music' do
     userGenre = params[:genre].to_sym
-    p userGenre
-    @result = music_playlists(userGenre)
+    @userGenre = userGenre
+    @result = music_playlists(@userGenre)
     @status = "active"
     erb :music
   end
@@ -39,5 +39,9 @@ class MyApp < Sinatra::Base
   get '/visualart' do
     erb :visualart
   end  
+  
+  get '/about' do
+    erb :about
+  end
 
 end

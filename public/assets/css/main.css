@@ -3408,7 +3408,7 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("http://cdn.wallpapersafari.com/41/4/k2Inqr.jpg");
+		background-image: url("https://c1.staticflickr.com/6/5246/5333437251_ce0aa6925d_b.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3988,3 +3988,10 @@
 			visibility: visible;
 		}
 		
+.capital {
+    text-transform: uppercase;
+}
+		
+#borderdropdown {
+	border: 10px solid red;
+}

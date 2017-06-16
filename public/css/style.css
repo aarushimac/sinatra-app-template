@@ -6,6 +6,9 @@
     font-size: 50px;
 }
 
+#content {
+    color: rgb(171,17,93);
+}
 .active {
     display: block;
 }
