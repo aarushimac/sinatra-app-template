@@ -1951,8 +1951,9 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
-		border: none;
+		/*background: white;*/
+		border-style: solid;
+		border-color: white;
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -1998,6 +1999,7 @@
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
+		
 		}
 
 		.select-wrapper:before {
@@ -3992,6 +3994,6 @@
     text-transform: uppercase;
 }
 		
-#borderdropdown {
-	border: 10px solid red;
+select{
+	border-style:solid;
 }

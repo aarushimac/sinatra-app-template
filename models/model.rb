@@ -13,7 +13,7 @@ def photography(type)
     
     
     parse_results = JSON.parse(results)
-    sample_results = parse_results["images"].sample(6)
+    sample_results = parse_results["images"].sample(12)
     six_images = []
     sample_results.each do |image|
         six_images.push(image["display_sizes"][0]["uri"])
@@ -21,7 +21,7 @@ def photography(type)
     six_images
     
 end
-photography("cat")
+puts photography("display_set")
 # OMG IM GOIGN TO DIE OML OK THIS IS WHERE CODE STARTS --- NaYNa
 # def music(genre)
 #     token_request = RestClient::Request.execute(method: :post, 
